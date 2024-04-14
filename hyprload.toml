@@ -1,0 +1,10 @@
+[hyprLua]
+author = "Luposmi"
+version = "0.1"
+description = "experimental plugin to access plugin api from lua"
+
+[hyprLua,build]
+output = "hyprLua.so"
+steps = [ 
+    "make all"
+] 
