@@ -33,8 +33,7 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
         throw std::runtime_error("HyprLua Version mismatch");
     }
 
-    init();
-
+    lua_State *state = luaL_newstate();
     return {"HyprLua", "Lua integration for Hyprland API", "Luposmi", "0.0"};
 }
 
